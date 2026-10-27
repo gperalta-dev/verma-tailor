@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Verma Tailor | Mill Woods, Edmonton (preview)</title>
-<meta name="description" content="Tailor at 3426 16a Ave NW. Call to confirm availability. Free website preview by Local Studio. Not the official site.">
+<meta name="description" content="Suit tailoring, pants alterations and dress alterations on 3426 16a Ave NW, Mill Woods. Free website preview by Whyte Web. Not the official site.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -28,6 +28,7 @@
   .mast .where { font-size: 14px; color: var(--muted); }
   .mast h1 { font: 500 clamp(44px, 6.5vw, 86px)/1 var(--display); letter-spacing: -0.01em; margin: 8px 0 6px; }
   .mast .hl { font: italic 400 clamp(20px, 2.2vw, 26px)/1.3 var(--display); color: var(--muted); margin: 0; }
+  .mast-cta { display: none; }
   .mast nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 30px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 15px; }
   .mast nav a { text-decoration: none; padding: 8px 0; }
   .mast nav a:hover { color: var(--accent); }
@@ -63,6 +64,7 @@
   .voices { text-align: center; background: var(--soft); }
   .voices .big { font: 500 clamp(64px, 9vw, 120px)/1 var(--display); color: var(--accent); }
   .voices p { max-width: 46ch; margin: 10px auto 24px; }
+  .glink { font-weight: 700; color: var(--accent); text-underline-offset: 5px; }
   .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
   .chip { display: inline-flex; gap: 8px; padding: 7px 16px; border: 1px solid var(--rule); background: var(--bg); font-size: 15px; }
   .chip em { font-style: normal; color: var(--muted); }
@@ -79,56 +81,68 @@
   .dark .mast .where, .dark .mast .hl { color: color-mix(in srgb, var(--on-dark) 75%, transparent); }
   .dark .mast nav { border-color: color-mix(in srgb, var(--on-dark) 25%, transparent); }
   .dark .mast nav .call { color: var(--on-dark); text-decoration: underline; text-underline-offset: 5px; }
-  .flip .pano { width: min(1080px, 100% - 40px); margin-inline: auto; }
-  .flip .pano img { aspect-ratio: 3 / 2; }
-  .flip .inset { margin: -110px 24px 0 auto; width: min(620px, 100% - 40px); }
+  @media (min-width: 901px) {
+    .flip .pano { width: min(1080px, 100% - 40px); margin-inline: auto; }
+    .flip .pano img { aspect-ratio: 3 / 2; }
+    .flip .inset { margin: -110px 24px 0 auto; width: min(620px, 100% - 40px); }
+  }
+  @media (max-width: 480px) { .inset { grid-template-columns: 1fr !important; } .inset .s { border-left: 0; padding-left: 0; } }
   @media (max-width: 860px) {
     .pano img { aspect-ratio: 4 / 3; }
     .inset { grid-template-columns: 1fr 1fr; margin-top: -40px; padding: 22px; gap: 18px; }
     .inset .btn { grid-column: 1 / -1; }
+    .inset .s span { white-space: nowrap; }
     .inset .s { padding-left: 18px; }
     .intro, .visit { grid-template-columns: 1fr; gap: 36px; }
     .pair figure:last-child { margin-top: 40px; }
     section { padding: 64px 0; }
-    .mast nav a:not(.call) { display: none; }
-    .flip .inset { margin: -40px auto 0; }
+    .mast nav { display: none; }
+    .mast { padding: 18px 0 16px; }
+    .dark .mast { padding: 22px 20px 18px; }
+    .mast h1 { font-size: 40px; }
+    .mast .hl { font-size: 18px; }
+    .mast-cta { display: inline-flex; margin-top: 14px; min-height: 48px; }
+    .pano img { aspect-ratio: 16 / 9; }
+    .inset .btn { display: none; }
   }
 </style>
 </head>
 <body class="dark">
-<div class="notice">Free website preview made by <b>Local Studio</b> for Verma Tailor. Not the official site.</div>
+<div class="notice">Free website preview made by <b>Whyte Web</b> for Verma Tailor. Not the official site.</div>
 <header class="wrap mast" id="top">
   <div class="where">Tailor, Mill Woods, Edmonton</div>
   <h1>Verma Tailor</h1>
   <p class="hl">Alterations in Mill Woods.</p>
+  <a class="btn btn-acc mast-cta" href="tel:+17806680564">Call about your garment</a>
   <nav aria-label="Sections"><a href="#services">Services</a><a href="#photos">Work</a><a href="#visit">Hours and visit</a><a class="call" href="tel:+17806680564">(780) 668-0564</a></nav>
 </header>
 
 <div class="pano">
-  <span class="k-sample">Sample photo</span><img src="img/photo-1.jpg" alt="Suit tailoring">
+  <span class="k-sample">Sample photo</span><img src="img/photo-1.jpg" alt="Presser foot and needle">
   <div class="inset">
     <div class="r"><b>5.0</b><small>34 Google reviews</small></div>
     <div class="s"><span><i class="k-dot" data-dot></i><span data-state></span></span><small data-sub></small></div>
-    <a class="btn btn-acc" href="tel:+17806680564">Call to book a fitting</a>
+    <a class="btn btn-acc" href="tel:+17806680564">Call about your garment</a>
   </div>
 </div>
 
 <main>
+  <div class="wrap" style="padding-top:72px; --k-accent-text: var(--accent)"><ul class="k-facts" aria-label="Contact"><li><b>Call</b><a href="tel:+17806680564">(780) 668-0564</a></li><li><b>Address</b><span>3426 16a Ave NW</span></li><li><b>Today</b><span data-today>Call to check</span></li></ul></div>
   <section id="services">
     <div class="wrap intro">
       <div>
         <div class="eyebrow-line">The work</div>
-        <h2>What reviewers mention most.</h2>
-        <p>The list on the right is what Google reviewers mention most when they talk about Verma Tailor. Every job is priced on the garment, so call or bring it in for a quote.</p>
+        <h2>Services mentioned in Google reviews.</h2>
+        <p>Picked from what 34 Google reviewers mention most. Call for pricing.</p>
         <a class="btn" href="tel:+17806680564">Call (780) 668-0564</a>
       </div>
-      <ul class="list"><li><span class="s-name">Suit tailoring</span><span class="s-meta">3 Google reviews mention it</span></li><li><span class="s-name">Pants alterations</span><span class="s-meta">3 Google reviews mention it</span></li><li><span class="s-name">Dress alterations</span><span class="s-meta">3 Google reviews mention it</span></li></ul>
+      <ul class="list"><li><span class="s-name">Suit tailoring</span><span class="s-meta">Ask for a price</span></li><li><span class="s-name">Pants alterations</span><span class="s-meta">Ask for a price</span></li><li><span class="s-name">Dress alterations</span><span class="s-meta">Ask for a price</span></li></ul>
     </div>
   </section>
 
   <section id="photos" style="padding-top:0">
     <div class="wrap pair">
-      <figure><span class="k-sample">Sample photo</span><img src="img/photo-2.jpg" alt="Hand sewing machine" loading="lazy"><figcaption>Hand sewing machine</figcaption></figure>
+      <figure><span class="k-sample">Sample photo</span><img src="img/photo-2.jpg" alt="Stitching a seam" loading="lazy"><figcaption>Stitching a seam</figcaption></figure>
       <figure><span class="k-sample">Sample photo</span><img src="img/photo-3.jpg" alt="Cutting cloth" loading="lazy"><figcaption>Cutting cloth</figcaption></figure>
     </div>
   </section>
@@ -136,8 +150,8 @@
   <section class="voices">
     <div class="wrap">
       <div class="big">5.0</div>
-      <p>34 people have reviewed Verma Tailor on Google. These come up most often:</p>
-      <div class="chips"><span class="chip">suit tailoring<em>3</em></span><span class="chip">pants alterations<em>3</em></span><span class="chip">dress alterations<em>3</em></span><span class="chip">fitting<em>3</em></span><span class="chip">perfect fit<em>3</em></span><span class="chip">stitching<em>3</em></span></div>
+      <p>34 people have reviewed Verma Tailor on Google.</p>
+      <a class="glink" href="https://www.google.com/maps/place/Verma+Tailor+%28Side+wooden+door%29/data=!4m7!3m6!1s0x53a01912b684c545:0x578887254e3a8db8!8m2!3d53.4437339!4d-113.3968885!16s%2Fg%2F11m77k351x!19sChIJRcWEthIZoFMRuI06TiWHiFc" target="_blank" rel="noopener">Read them on Google</a>
     </div>
   </section>
 
@@ -157,9 +171,9 @@
 
 <footer>
   <div class="wrap">
-    <span>Preview made by Local Studio, Edmonton, for Verma Tailor. Details from the public Google listing (Oct 27, 2026). Not the official website.</span>
+    <span>Preview made by Whyte Web, Edmonton, for Verma Tailor. Details from the public Google listing (Oct 27, 2026). Not the official website.</span>
     <a href="https://www.google.com/maps/place/Verma+Tailor+%28Side+wooden+door%29/data=!4m7!3m6!1s0x53a01912b684c545:0x578887254e3a8db8!8m2!3d53.4437339!4d-113.3968885!16s%2Fg%2F11m77k351x!19sChIJRcWEthIZoFMRuI06TiWHiFc" target="_blank" rel="noopener">Verma Tailor on Google Maps</a>
-    <span>Photos: <a href="https://commons.wikimedia.org/wiki/File:A_Tailor_Sewing_Clothes_in_Her_Shop.jpg" target="_blank" rel="noopener">Meritkosy</a> (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Hand_sewing_machine_-_Macedonian_tailoring_craft.jpg" target="_blank" rel="noopener">Orce Wiki</a> (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:India_-_Varanasi_tailor_sewing_machine_-_1093.jpg" target="_blank" rel="noopener">Jorge Royan</a> (CC BY-SA 3.0); <a href="https://commons.wikimedia.org/wiki/File:African_tailor_sewing_a_leather_bag.jpg" target="_blank" rel="noopener">Wuzyprod</a> (CC BY-SA 4.0), via Wikimedia Commons. Sample photos until Verma Tailor adds their own.</span>
+    <span>Photos: <a href="https://commons.wikimedia.org/wiki/File:A_sewing_machine_needle_on_pink_%26_white_fabric.jpg" target="_blank" rel="noopener">Stch2022</a> (CC0); <a href="https://commons.wikimedia.org/wiki/File:Woman_sewing_a_face_mask_with_a_Singer_machine_08.jpg" target="_blank" rel="noopener">Tadeáš Bednarz</a> (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:India_-_Varanasi_tailor_sewing_machine_-_1093.jpg" target="_blank" rel="noopener">Jorge Royan</a> (CC BY-SA 3.0); <a href="https://commons.wikimedia.org/wiki/File:African_tailor_sewing_a_leather_bag.jpg" target="_blank" rel="noopener">Wuzyprod</a> (CC BY-SA 4.0), via Wikimedia Commons. Sample photos until Verma Tailor adds their own.</span>
   </div>
 </footer>
 <!-- shared by every layout: mobile call bar, chat assistant, live open/closed status. layouts set the --k-* colours. -->
@@ -176,6 +190,17 @@
   .k-week i.on { background: var(--k-accent); }
   .k-week i.today { outline: 2px solid currentColor; outline-offset: 1px; }
   .k-callbar { display: none; }
+  .k-facts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .k-facts li { display: grid; gap: 2px; padding: 16px 20px; border: 1px solid color-mix(in srgb, currentColor 16%, transparent); border-radius: 14px; min-width: 0; }
+  .k-facts b { font-size: 13.5px; font-weight: 700; opacity: 0.7; }
+  .k-facts a, .k-facts span { font-size: 18px; font-weight: 600; color: inherit; text-decoration: none; overflow-wrap: anywhere; }
+  @media (max-width: 760px) { .k-facts { grid-template-columns: 1fr; gap: 8px; } .k-facts li { padding: 12px 16px; } }
+  .k-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: step; }
+  .k-steps li { counter-increment: step; display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: baseline; padding: 18px 20px; border: 1px solid color-mix(in srgb, currentColor 16%, transparent); border-radius: 14px; }
+  .k-steps li::before { content: counter(step); grid-row: span 2; font-weight: 800; font-size: 22px; line-height: 1; color: var(--k-accent-text, currentColor); }
+  .k-steps b { font-size: 17px; }
+  .k-steps span { font-size: 15px; opacity: 0.78; }
+  @media (max-width: 760px) { .k-steps { grid-template-columns: 1fr; gap: 10px; } }
   .k-sample { position: absolute; z-index: 2; left: 16px; top: 16px; padding: 4px 11px; border-radius: 999px; background: rgba(10, 12, 16, 0.66); color: #fff; font: 600 12.5px/1.35 system-ui, sans-serif; letter-spacing: 0.01em; pointer-events: none; }
   figure { position: relative; }
   .chat-fab { position: fixed; right: 24px; bottom: 24px; z-index: 30; display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 22px 0 18px; border: 0; border-radius: 999px; background: var(--k-accent); color: var(--k-accent-ink); font: 700 16px/1 var(--k-font); cursor: pointer; box-shadow: 0 12px 32px rgba(5, 10, 15, 0.3); transition: transform 160ms ease; }
@@ -210,7 +235,7 @@
     .k-callbar a { flex: 1; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; font: 700 16px var(--k-font); text-decoration: none; box-shadow: 0 10px 28px rgba(5, 10, 15, 0.28); }
     .k-callbar a:first-child { background: var(--k-accent); color: var(--k-accent-ink); }
     .k-callbar a:last-child { flex: 0 0 auto; padding: 0 18px; background: var(--k-dark); color: var(--k-on-dark); }
-    .chat-fab { right: 12px; bottom: calc(max(12px, env(safe-area-inset-bottom)) + 66px); min-height: 48px; padding: 0 18px 0 14px; }
+    .chat-fab { display: none; right: 12px; bottom: calc(max(12px, env(safe-area-inset-bottom)) + 66px); min-height: 48px; padding: 0 18px 0 14px; }
     .chat { right: 8px; left: 8px; bottom: 8px; width: auto; height: min(620px, calc(100dvh - 16px)); }
     body { padding-bottom: 84px; }
   }
@@ -234,7 +259,7 @@
     <input id="chat-in" type="text" maxlength="200" placeholder="Ask about hours, location, services" aria-label="Your question" enterkeyhint="send">
     <button type="submit">Send</button>
   </form>
-  <div class="chat-note">Demo assistant by Local Studio. It answers only from Verma Tailor's Google listing. For anything else, call or text.</div>
+  <div class="chat-note">Demo assistant by Whyte Web. It answers only from Verma Tailor's Google listing. For anything else, call or text.</div>
 </section>
 
 <script type="application/json" id="biz">{"hours": {"Monday": "4 to 8 p.m.", "Tuesday": "4 to 8 p.m.", "Wednesday": "4 to 8 p.m.", "Thursday": "4 to 8 p.m.", "Friday": "4 to 8 p.m.", "Saturday": "4 to 8 p.m.", "Sunday": "4 to 8 p.m."}, "name": "Verma Tailor", "category": "Tailor", "area": "Mill Woods", "address": "3426 16a Ave NW, Edmonton, AB T6L 2N4", "phone": "(780) 668-0564", "tel": "+17806680564", "rating": "5.0", "reviews": "34", "maps_url": "https://www.google.com/maps/place/Verma+Tailor+%28Side+wooden+door%29/data=!4m7!3m6!1s0x53a01912b684c545:0x578887254e3a8db8!8m2!3d53.4437339!4d-113.3968885!16s%2Fg%2F11m77k351x!19sChIJRcWEthIZoFMRuI06TiWHiFc", "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Verma+Tailor%2C+3426+16a+Ave+NW%2C+Edmonton%2C+AB+T6L+2N4", "services": [["suit tailoring", 3], ["pants alterations", 3], ["dress alterations", 3]]}</script>
@@ -286,6 +311,7 @@
   document.querySelectorAll('[data-sub]').forEach((el) => { el.textContent = sub; });
   document.querySelectorAll('[data-statesub]').forEach((el) => { el.textContent = `${state}. ${sub}.`; });
   document.querySelectorAll('[data-dot]').forEach((el) => { el.classList.toggle('closed', !open); });
+  document.querySelectorAll('[data-today]').forEach((el) => { el.textContent = hoursKnown ? ((biz.hours || {})[DAYS[today]] || 'Closed') : 'Call to check'; });
   document.querySelectorAll('[data-week]').forEach((week) => DAYS.forEach((d, k) => {
     const cell = document.createElement('div'), bar = document.createElement('i'), lbl = document.createElement('b');
     if (spans((biz.hours || {})[d]).length) bar.className = 'on';
@@ -313,8 +339,8 @@
     const known = Object.keys(biz.hours || {}).length > 0;
     const callAct = { label: 'Call ' + phone, href: 'tel:' + tel };
     const textAct = { label: 'Text', href: 'sms:' + tel, alt: true };
-    const contactActs = [callAct, textAct];
-    const noHours = { text: "I don't have hours on file. Call or text and we'll tell you.", acts: contactActs };
+    const contactActs = [callAct];
+    const noHours = { text: "I don't have hours on file. Call and we'll tell you.", acts: contactActs };
 
     function status() {
       const n = nowEdm(), t = todayIdx(), m = n.getHours() * 60 + n.getMinutes();
@@ -386,7 +412,7 @@
       'mon tue wed thu fri sat sun monday tuesday wednesday thursday friday saturday sunday').split(' '));
     [biz.name, biz.area, biz.category, ...(biz.services || []).map((s) => s[0])].forEach((s) => norm(s).trim().split(' ').forEach((w) => KNOWN.add(w)));
     const unknownWords = (q) => q.trim().split(' ').filter((w) => w && !/^\d+$/.test(w) && !KNOWN.has(w) && !KNOWN.has(stem(w)));
-    const handoff = { text: "I don't have that. I only know our hours, address, phone and what's in our Google reviews. Call or text " + phone + ' and a person will help.', acts: contactActs };
+    const handoff = { text: "I don't have that. I only know our hours, address, phone and what's in our Google reviews. Call " + phone + ' and a person will help.', acts: contactActs };
 
     // every intent a question contains contributes a part; parts are merged in the order they were asked.
     // anything that can't be answered completely (digits, dates, holidays, unknown words) hands the whole question off.
@@ -404,7 +430,7 @@
       }
       // holidays and anything we have no data for: hand off instead of guessing from a keyword
       if (R(/ (christmas|xmas|boxing day|easter|thanksgiving|halloween|new years?|canada day|victoria day|labou?r day|remembrance|family day|good friday|holidays?|stat|long weekend) /))
-        return { text: "I don't have holiday hours. Call or text " + phone + " to check before you come.", acts: contactActs };
+        return { text: "I don't have holiday hours. Call " + phone + " to check before you come.", acts: contactActs };
       if (unknownWords(q).length) return handoff;
 
       const at = (rx) => { const m = rx.exec(q); return m ? m.index : -1; };
@@ -419,16 +445,16 @@
       const book = at(/ (book|booking|appointment|appointments|reserve|reservation|walk in|walkin|walk ins|walkins|wait time|waiting|cancel|reschedule|queue) /);
       const noData = [parking, price, book].filter((i) => i >= 0);
       if (noData.length) {
-        const text = price >= 0 && book >= 0 ? "I don't have prices or payment details, and I can't book or check the wait. Call or text " + phone + " and we'll sort it out."
-          : price >= 0 ? "I don't have prices or payment details. Call or text " + phone + " and we'll quote you."
-          : book >= 0 ? "I can't book or check the wait. Call or text " + phone + " and we'll sort it out."
-          : "I don't have that on our listing. Call or text " + phone + " and we'll tell you.";
+        const text = price >= 0 && book >= 0 ? "I don't have prices or payment details, and I can't book or check the wait. Call " + phone + " and we'll sort it out."
+          : price >= 0 ? "I don't have prices or payment details. Call " + phone + " and we'll quote you."
+          : book >= 0 ? "I can't book or check the wait. Call " + phone + " and we'll sort it out."
+          : "I don't have that on our listing. Call " + phone + " and we'll tell you.";
         parts.push({ i: Math.min(...noData), text, acts: contactActs });
       }
       if (!noData.length)
-        push(/ (phone|number|call|text|contact|reach|email|dm|message|instagram|facebook) /, 'Call or text ' + phone + '.', contactActs);
+        push(/ (phone|number|call|text|contact|reach|email|dm|message|instagram|facebook) /, 'Call ' + phone + '.', contactActs);
       push(/ (where|address|location|directions?|map|maps|find you|get there|located|street|how do i get|near|nearby) /,
-        biz.address ? 'We are at ' + biz.address + '.' : 'Call or text for our address.',
+        biz.address ? 'We are at ' + biz.address + '.' : 'Call for our address.',
         [{ label: 'Get directions', href: biz.directions_url }, { label: 'Open in Maps', href: biz.maps_url, alt: true }]);
 
       const svcs = matchServices(q);
@@ -437,7 +463,7 @@
       const listAsked = / (services?|offer|menu|specialt(y|ies)) /.test(q);
       if (listAsked || !svcs.length) {
         const list = (biz.services || []).map((s) => s[0] + ' (' + s[1] + ' reviews)').join(', ');
-        push(listAsked ? / (services?|offer|menu|specialt(y|ies)) / : listRx, list ? 'What reviewers mention most: ' + list + '.' + (noPrices ? ' For the full list and prices, call or text ' + phone + '.' : '') : 'Call or text ' + phone + ' to ask what we offer.', contactActs);
+        push(listAsked ? / (services?|offer|menu|specialt(y|ies)) / : listRx, list ? 'What reviewers mention most: ' + list + '.' + (noPrices ? ' For the full list and prices, call or text ' + phone + '.' : '') : 'Call ' + phone + ' to ask what we offer.', contactActs);
       } else {
         const named = svcs.map((s) => s[0] + ' (' + s[1] + ' reviews)');
         const list = named.length > 1 ? named.slice(0, -1).join(', ') + ' and ' + named[named.length - 1] : named[0];
@@ -475,7 +501,7 @@
           } else if (s.next) {
             text = asksOpen || asksClose ? 'We open ' + when(s.next) + ' at ' + s.next.at + (asksClose ? ' and close at ' + s.next.end : '') + '.'
               : (onlyClosed ? 'Yes, we are closed right now. ' : 'We are closed right now. ') + 'We open ' + when(s.next) + ' at ' + s.next.at + '.';
-          } else text = 'Call or text for our hours.';
+          } else text = 'Call for our hours.';
           parts.push({ i: off + oc.index, text });
         }
       });
@@ -511,7 +537,7 @@
     function start() {
       paintStatus();
       add('bot', 'Hi! I can answer questions about ' + biz.name + ': hours, where we are, services. For anything else I will point you to call or text.');
-      [['Open now?', 'Are you open now?'], ['Hours', 'What are your hours?'], ['Where are you?', 'Where are you located?'], ['Services', 'What services do you offer?'], ['Call or text', 'What is your phone number?']].forEach(([label, q]) => {
+      [['Open now?', 'Are you open now?'], ['Hours', 'What are your hours?'], ['Where are you?', 'Where are you located?'], ['Services', 'What services do you offer?'], ['Call', 'What is your phone number?']].forEach(([label, q]) => {
         const b = document.createElement('button'); b.type = 'button'; b.textContent = label;
         b.addEventListener('click', () => ask(q)); chips.append(b);
       });
